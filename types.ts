@@ -1,10 +1,14 @@
 
 export interface UserProfile {
+  id: string;
   name: string;
   bio: string;
   avatar: string;
   level: number;
   creationsCount: number;
+  credits: number;
+  lastCreditReset: number; // Timestamp of last monthly reset
+  provider?: 'google' | 'facebook' | 'x' | null;
 }
 
 export interface Creation {
@@ -19,6 +23,15 @@ export interface Creation {
     mood: string;
     tempo: string;
   };
+}
+
+export interface MusicTheme {
+  id: string;
+  description: string;
+  genre: string;
+  mood: string;
+  tempo: string;
+  timestamp: number;
 }
 
 export type MusicGenre = 
