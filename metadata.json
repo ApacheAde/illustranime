@@ -1,0 +1,8 @@
+{
+  "name": "AniGen Studio",
+  "description": "Create stunning anime characters and environments, compose descriptive music themes, and manage your creative profile.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
